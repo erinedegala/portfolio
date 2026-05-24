@@ -1,0 +1,1153 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"/>
+<title>Katherine Lean Degala — Executive & Operations Virtual Assistant</title>
+<meta name="description" content="Katherine Lean Degala is an Executive & Operations Virtual Assistant based in General Santos City, Philippines, working US time zone aligned. Claude AI Certified."/>
+<link rel="canonical" href="https://katherinedegala.com"/>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --cream:#f7f4ef;
+  --cream-2:#ede8e0;
+  --cream-3:#e5dfd5;
+  --ink:#1a1a18;
+  --ink-2:#3d3d3a;
+  --ink-3:#7a7a74;
+  --ink-4:#a8a8a2;
+  --green:#1e3d2f;
+  --green-2:#2d5a3d;
+  --green-3:#3d7a52;
+  --gold:#c8a96e;
+  --green-light:#e8f0eb;
+  --r:4px;
+  --r-lg:12px;
+  --border:rgba(26,26,24,0.1);
+  --border-dark:rgba(247,244,239,0.1);
+  --serif:'Cormorant Garamond',Georgia,serif;
+  --sans:'Inter',system-ui,sans-serif;
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--cream);color:var(--ink);font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased}
+#ss-guard{display:none;position:fixed;inset:0;background:var(--cream);z-index:99999}
+
+/* ── NAV ── */
+nav{position:sticky;top:0;z-index:100;height:54px;display:flex;align-items:center;justify-content:space-between;padding:0 2.5rem;background:rgba(247,244,239,.97);backdrop-filter:blur(16px);border-bottom:1px solid var(--border)}
+nav.scrolled{box-shadow:0 1px 24px rgba(0,0,0,.06)}
+.nav-brand{display:flex;flex-direction:column;gap:1px;text-decoration:none}
+.nav-name{font-family:var(--serif);font-size:17px;color:var(--ink);font-style:italic;letter-spacing:-.01em;line-height:1}
+.nav-sub{font-size:9.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--green-2);font-weight:500}
+.nav-right{display:flex;align-items:center;gap:18px}
+.nav-portfolio{font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-2);text-decoration:none;font-weight:500;transition:color .15s}
+.nav-portfolio:hover{color:var(--ink)}
+.nav-cta{display:inline-flex;align-items:center;gap:5px;font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:var(--cream);background:var(--ink);text-decoration:none;padding:9px 18px;font-weight:500;transition:background .15s}
+.nav-cta:hover{background:var(--green)}
+.ham{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px}
+.ham span{display:block;width:20px;height:1.5px;background:var(--ink);transition:all .25s}
+.mob{display:none;position:fixed;top:54px;left:0;right:0;background:var(--cream);border-bottom:1px solid var(--border);padding:1.25rem 1.5rem;z-index:99;flex-direction:column;gap:.75rem}
+.mob.open{display:flex}
+.mob a{font-size:12px;color:var(--ink-2);text-decoration:none;padding:.5rem 0;border-bottom:1px solid var(--border);letter-spacing:.04em;text-transform:uppercase}
+
+/* ── LAYOUT ── */
+.wrap{max-width:1060px;margin:0 auto;padding:0 2.5rem}
+
+/* ── HERO ── */
+#hero{padding:4rem 0 3rem}
+.hero-grid{display:grid;grid-template-columns:1fr 220px;gap:4rem;align-items:flex-start}
+.hero-tag{display:inline-flex;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2);border:1px solid var(--border);padding:5px 14px;margin-bottom:1.5rem;font-weight:500}
+.hero-h1{font-family:var(--serif);font-size:clamp(50px,5.5vw,72px);line-height:1.02;letter-spacing:-.025em;font-weight:400;color:var(--ink);margin-bottom:1rem}
+.hero-pitch{font-size:15px;color:var(--ink-2);line-height:1.75;font-weight:300;max-width:480px}
+.hero-stats{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--border);margin-top:2.25rem;padding-top:1.5rem}
+.stat{padding:.25rem 1.25rem .25rem 0}
+.stat:not(:last-child){border-right:1px solid var(--border);margin-right:1.25rem}
+.stat-n{font-family:var(--serif);font-size:30px;font-weight:500;line-height:1;color:var(--ink);display:block}
+.stat-l{font-size:10px;color:var(--ink-3);letter-spacing:.04em;display:block;margin-top:4px;line-height:1.4}
+.hero-img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center;display:block}
+
+/* ── TICKER STRIP ── */
+#ticker{background:var(--cream-2);border-top:1px solid var(--border);border-bottom:1px solid var(--border);overflow:hidden;padding:.65rem 0;white-space:nowrap}
+.ticker-inner{display:inline-flex;animation:scroll-left 54s linear infinite;gap:0;align-items:center}
+.ticker-item{font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-2);font-weight:500;padding:0 1.75rem}
+.ticker-sep{font-size:11px;color:var(--green-2);padding:0;opacity:.7;flex-shrink:0}
+@keyframes scroll-left{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+#ticker:hover .ticker-inner{animation-play-state:paused}
+
+/* ── QUOTE BAND ── */
+#quote{background:var(--green);padding:3.5rem 0}
+.quote-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
+.quote-text{font-family:var(--serif);font-size:clamp(22px,2.8vw,30px);color:rgba(247,244,239,.92);line-height:1.4;font-style:italic;font-weight:400}
+.quote-checks{display:flex;flex-direction:column;gap:1rem}
+.qc{display:flex;align-items:flex-start;gap:12px;font-size:13px;color:rgba(247,244,239,.75);line-height:1.5;font-weight:300}
+.qc-icon{width:18px;height:18px;flex-shrink:0;border:1.5px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:1px}
+.qc-icon svg{color:var(--gold)}
+
+/* ── SERVICES / ACCORDION ── */
+#services{padding:4.5rem 0;border-top:1px solid var(--border)}
+.section-head{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:2rem;padding-bottom:1rem;border-bottom:1px solid var(--border)}
+.section-label{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-2);font-weight:500}
+.section-note{font-size:11px;color:var(--ink-3)}
+.accordion{display:flex;flex-direction:column}
+.acc-item{border-bottom:1px solid var(--border)}
+.acc-head{display:grid;grid-template-columns:28px 28px 1fr 1fr 28px;align-items:center;padding:1.25rem 0;cursor:pointer;user-select:none;gap:1rem;transition:background .15s}
+.acc-num{font-size:11px;color:var(--ink-3);font-weight:400;line-height:1}
+.acc-icon-svg{width:18px;height:18px;flex-shrink:0;opacity:.7}
+.acc-title{font-family:var(--serif);font-size:20px;color:var(--ink);font-weight:400;line-height:1.1}
+.acc-tagline{font-size:12px;color:var(--ink-3);line-height:1.5;font-weight:300}
+.acc-toggle{width:28px;height:28px;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background .15s;justify-self:end}
+.acc-toggle::before,.acc-toggle::after{content:'';position:absolute;background:var(--ink-3);border-radius:1px;transition:all .25s}
+.acc-toggle{position:relative}
+.acc-toggle::before{width:10px;height:1px}
+.acc-toggle::after{width:1px;height:10px;opacity:1}
+.acc-item.open .acc-toggle::after{opacity:0}
+.acc-item.open .acc-toggle{background:var(--ink);border-color:var(--ink)}
+.acc-item.open .acc-toggle::before,.acc-item.open .acc-toggle::after{background:var(--cream)}
+.acc-body{display:none;padding:0 0 1.75rem calc(28px + 28px + 2rem)}
+.acc-item.open .acc-body{display:block}
+.acc-cols{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
+.acc-list{list-style:none;display:flex;flex-direction:column;gap:8px}
+.acc-list li{font-size:13px;color:var(--ink-2);padding-left:18px;position:relative;line-height:1.55;font-weight:300}
+.acc-list li::before{content:'→';position:absolute;left:0;color:var(--ink-4);font-size:11px;top:2px}
+
+/* ── WORK SAMPLES ── */
+#samples{padding:4.5rem 0;background:var(--cream-2);border-top:1px solid var(--border)}
+.filter-row{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:2rem}
+.fb{font-size:10.5px;padding:6px 14px;border:1px solid var(--border);background:transparent;color:var(--ink-3);cursor:pointer;transition:all .15s;letter-spacing:.05em;text-transform:uppercase;font-weight:500;font-family:var(--sans)}
+.fb:hover{border-color:var(--ink-2);color:var(--ink-2)}
+.fb.active{background:var(--ink);color:var(--cream);border-color:var(--ink)}
+#samples .samples-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.sample-card{border:1px solid var(--border);border-radius:var(--r-lg);overflow:hidden;background:var(--cream);transition:all .25s;opacity:0;transform:translateY(16px)}
+.sample-card.vis{opacity:1;transform:translateY(0)}
+.sample-card:hover{border-color:var(--green-2);box-shadow:0 8px 32px rgba(0,0,0,.08);transform:translateY(-3px)}
+.ss-wrap{position:relative;overflow:hidden;background:var(--cream-3);cursor:pointer;aspect-ratio:16/10}
+.ss-wrap img{width:100%;height:100%;object-fit:cover;object-position:top;transition:transform .4s ease;display:block}
+.ss-wrap:hover img{transform:scale(1.02)}
+.ss-overlay{position:absolute;inset:0;background:rgba(26,26,24,0);transition:background .3s;display:flex;align-items:center;justify-content:center}
+.ss-wrap:hover .ss-overlay{background:rgba(26,26,24,.35)}
+.ss-zoom{opacity:0;font-size:13px;color:#fff;font-weight:500;letter-spacing:.05em;transition:opacity .3s;display:flex;align-items:center;gap:8px}
+.ss-wrap:hover .ss-zoom{opacity:1}
+.tool-badge{position:absolute;top:12px;left:12px;font-size:10px;padding:4px 10px;background:rgba(26,26,24,.8);color:#fff;border-radius:20px;letter-spacing:.06em;text-transform:uppercase;backdrop-filter:blur(8px)}
+.wm-img::after{content:"© Katherine Lean Degala";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%) rotate(-20deg);font-size:13px;color:rgba(255,255,255,.15);white-space:nowrap;pointer-events:none;z-index:5;letter-spacing:.08em;font-family:var(--sans);font-weight:500;text-shadow:0 1px 3px rgba(0,0,0,.3);width:100%;text-align:center}
+.card-body{padding:1.5rem}
+.card-category{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--green-2);font-weight:500;margin-bottom:.5rem}
+.card-title{font-family:var(--serif);font-size:18px;color:var(--ink);line-height:1.2;margin-bottom:.75rem}
+.card-desc{font-size:13px;color:var(--ink-2);line-height:1.7;font-weight:300;margin-bottom:1rem}
+.outcome{background:var(--green-light);border-left:3px solid var(--green-2);padding:.75rem 1rem;border-radius:0 var(--r) var(--r) 0;margin-bottom:1rem}
+.outcome-label{font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--green-2);font-weight:500;margin-bottom:3px}
+.outcome-text{font-size:12px;color:var(--green);font-weight:400;line-height:1.5}
+.card-tags{display:flex;flex-wrap:wrap;gap:5px}
+.ctag{font-size:11px;padding:3px 9px;background:var(--cream-2);color:var(--ink-2);border-radius:2px;border:1px solid var(--border)}
+
+/* ── LIGHTBOX ── */
+#lb{display:none;position:fixed;inset:0;background:rgba(26,26,24,.95);z-index:9999;align-items:center;justify-content:center;padding:2rem}
+#lb.open{display:flex}
+#lb img{max-width:90vw;max-height:85vh;object-fit:contain;user-select:none}
+#lb-x{position:absolute;top:1.5rem;right:1.5rem;background:rgba(247,244,239,.1);border:1px solid rgba(247,244,239,.15);color:#fff;font-size:12px;padding:7px 18px;cursor:pointer;letter-spacing:.06em;text-transform:uppercase;font-family:var(--sans);font-weight:500}
+#lb-x:hover{background:rgba(247,244,239,.18)}
+#lb-lbl{position:absolute;bottom:1.5rem;left:50%;transform:translateX(-50%);font-size:11px;color:rgba(247,244,239,.35);letter-spacing:.04em;text-align:center;font-family:var(--sans)}
+
+/* ── EXPERIENCE ── */
+#experience{padding:4.5rem 0;border-top:1px solid var(--border)}
+.exp-heading{margin-bottom:3rem}
+.exp-heading .section-label{margin-bottom:.6rem;display:block}
+.exp-h{font-family:var(--serif);font-size:clamp(36px,4vw,52px);font-weight:400;color:var(--ink);line-height:1}
+.exp-row{display:grid;grid-template-columns:160px 1fr;gap:3rem;padding:2.25rem 0;border-top:1px solid var(--border)}
+.exp-date{padding-top:.15rem}
+.exp-period{font-family:var(--serif);font-size:15px;font-weight:600;color:var(--ink);display:block;margin-bottom:4px}
+.exp-type{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);font-weight:500}
+.exp-card{background:var(--cream-2);padding:1.75rem 2rem}
+.exp-title{font-family:var(--serif);font-size:22px;color:var(--ink);font-weight:500;margin-bottom:.2rem;line-height:1.1}
+.exp-company{font-size:13px;color:var(--ink-2);margin-bottom:.75rem;font-weight:400}
+.exp-context{font-size:12.5px;color:var(--ink-2);font-style:italic;font-weight:300;line-height:1.6;border-left:2px solid var(--border);padding-left:.75rem;margin-bottom:1rem}
+.exp-bullets{list-style:none;display:flex;flex-direction:column;gap:.5rem;margin-bottom:1.1rem}
+.exp-bullets li{font-size:13px;color:var(--ink);padding-left:16px;position:relative;line-height:1.5;font-weight:300}
+.exp-bullets li::before{content:'◆';position:absolute;left:0;color:var(--ink-3);font-size:7px;top:5px}
+.exp-tags{display:flex;flex-wrap:wrap;gap:6px}
+.exp-tag{font-size:9.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--ink-2);border:1px solid var(--border);padding:3px 10px;font-weight:500}
+
+/* ── VALUE PROPS ── */
+#values{background:var(--ink);padding:3.5rem 0}
+.values-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+.val{padding:0 2rem;border-right:1px solid var(--border-dark)}
+.val:last-child{border-right:none}
+.val:first-child{padding-left:0}
+.val-title{font-family:var(--serif);font-size:18px;color:rgba(247,244,239,.9);font-weight:400;margin-bottom:.5rem;line-height:1.2}
+.val-desc{font-size:12px;color:rgba(247,244,239,.62);line-height:1.6;font-weight:300}
+
+/* ── SKILLS ── */
+#skills{padding:4.5rem 0;border-top:1px solid var(--border)}
+.skills-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem}
+.skills-col-label{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-2);font-weight:500;margin-bottom:1.5rem;display:block}
+.skill-pills{display:flex;flex-wrap:wrap;gap:8px}
+.skill-pill{font-size:12px;color:var(--ink-2);border:1px solid rgba(26,26,24,.18);padding:6px 14px;font-weight:400;line-height:1}
+.tools-list{display:flex;flex-direction:column;gap:.9rem}
+.tool-row{display:grid;grid-template-columns:120px 1fr;gap:1rem;align-items:baseline}
+.tool-cat{font-size:11px;color:var(--green-2);font-weight:500}
+.tool-items{font-size:12.5px;color:var(--ink-2);font-weight:300;line-height:1.6}
+
+/* ── CREDENTIALS ── */
+#credentials{padding:4.5rem 0;border-top:1px solid var(--border)}
+.cred-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);margin-top:1.75rem}
+.cred-card{background:var(--cream-2);padding:1.5rem 1.6rem}
+.cred-inst{font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);font-weight:500;margin-bottom:.6rem;display:block}
+.cred-title{font-family:var(--serif);font-size:16px;color:var(--ink);font-weight:500;line-height:1.2;margin-bottom:.4rem}
+.cred-desc{font-size:11.5px;color:var(--ink-2);font-weight:300;line-height:1.5}
+
+/* ── UPSKILLING ── */
+#upskilling{background:var(--green);padding:4.5rem 0}
+.upskill-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:4rem;align-items:start}
+.upskill-h{font-family:var(--serif);font-size:clamp(28px,3.5vw,42px);color:rgba(247,244,239,.92);font-weight:400;line-height:1.15;margin-bottom:.9rem}
+.upskill-p{font-size:13px;color:rgba(247,244,239,.6);line-height:1.75;font-weight:300;max-width:340px}
+.upskill-cards{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.usk-card{background:rgba(0,0,0,.22);padding:1.4rem 1.5rem;border:1px solid rgba(247,244,239,.08);transition:border-color .2s}
+.usk-card:hover{border-color:rgba(247,244,239,.18)}
+.usk-emoji{font-size:20px;margin-bottom:.75rem;display:block;line-height:1}
+.usk-title{font-family:var(--serif);font-size:16px;color:rgba(247,244,239,.9);font-weight:500;margin-bottom:.5rem;line-height:1.2}
+.usk-desc{font-size:12px;color:rgba(247,244,239,.5);line-height:1.6;font-weight:300;margin-bottom:.9rem}
+.usk-badge{display:inline-block;font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;padding:3px 10px;border:1px solid rgba(247,244,239,.18);color:rgba(247,244,239,.55);font-weight:500}
+.usk-badge.active{border-color:rgba(77,175,125,.5);color:#4daf7d;background:rgba(77,175,125,.08)}
+.usk-badge.progress{border-color:rgba(230,160,60,.4);color:#e6a03c;background:rgba(230,160,60,.07)}
+.usk-badge.practiced{border-color:rgba(100,150,220,.4);color:#6496dc;background:rgba(100,150,220,.07)}
+.usk-badge.certified{border-color:rgba(200,169,110,.4);color:var(--gold);background:rgba(200,169,110,.07)}
+@media(max-width:860px){.upskill-grid{grid-template-columns:1fr;gap:2.5rem}}
+@media(max-width:580px){.upskill-cards{grid-template-columns:1fr}}
+
+/* ── CONTACT ── */
+#contact{background:var(--ink);padding:5rem 0 0}
+.contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:5rem;align-items:start;margin-bottom:4rem}
+.contact-h{font-family:var(--serif);font-size:clamp(36px,4.5vw,56px);color:rgba(247,244,239,.92);line-height:1.05;font-weight:400;margin-bottom:.75rem}
+.contact-avail{font-size:12px;color:rgba(247,244,239,.65);margin-bottom:2rem;font-weight:300}
+.contact-dets{display:flex;flex-direction:column;gap:.9rem;margin-bottom:2rem}
+.cd{display:flex;align-items:center;gap:12px;font-size:13px;color:rgba(247,244,239,.75);font-weight:300}
+.cd svg{flex-shrink:0;opacity:.65}
+.cd a{color:rgba(247,244,239,.8);text-decoration:none;transition:color .15s}
+.cd a:hover{color:rgba(247,244,239,1)}
+.contact-resume{display:inline-flex;align-items:center;gap:8px;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:rgba(247,244,239,.55);text-decoration:none;transition:color .15s;font-weight:500;margin-top:.25rem}
+.contact-resume:hover{color:rgba(247,244,239,.75)}
+.contact-resume svg{opacity:.6}
+.cform{display:flex;flex-direction:column;gap:.9rem}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:.75rem}
+.fg{display:flex;flex-direction:column;gap:5px}
+.fg label{font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:rgba(247,244,239,.65);font-weight:500}
+.fg input,.fg select,.fg textarea{background:rgba(247,244,239,.06);border:1px solid rgba(247,244,239,.12);color:rgba(247,244,239,.85);font-family:var(--sans);font-size:13px;padding:11px 14px;outline:none;transition:border .15s;width:100%;font-weight:300}
+.fg input::placeholder,.fg textarea::placeholder{color:rgba(247,244,239,.25)}
+.fg input:focus,.fg select:focus,.fg textarea:focus{border-color:rgba(247,244,239,.3)}
+.fg textarea{resize:vertical;min-height:120px;line-height:1.6}
+.fg select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='rgba(247,244,239,0.4)' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;color:rgba(247,244,239,.6)}
+.fg select option{background:var(--ink);color:rgba(247,244,239,.85)}
+.btn-sub{background:var(--cream);color:var(--ink);width:100%;justify-content:center;font-size:11px;padding:15px;letter-spacing:.09em;text-transform:uppercase;font-weight:600;border:none;cursor:pointer;font-family:var(--sans);transition:background .2s;display:flex;align-items:center;gap:8px}
+.btn-sub:hover{background:#e8e3dc}
+.f-success{display:none;padding:2rem 0;color:rgba(247,244,239,.7);font-size:13px}
+.f-success h3{font-family:var(--serif);font-size:22px;color:rgba(247,244,239,.85);margin-bottom:.4rem}
+
+/* ── FOOTER ── */
+footer{background:var(--ink);border-top:1px solid rgba(247,244,239,.07);padding:1.25rem 2.5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+.f-copy{font-size:11px;color:rgba(247,244,239,.45);letter-spacing:.02em}
+.f-avail{display:flex;align-items:center;gap:8px;font-size:11px;color:rgba(247,244,239,.75);letter-spacing:.06em;text-transform:uppercase;font-weight:500;text-decoration:none;transition:color .15s}
+.f-avail:hover{color:rgba(247,244,239,.85)}
+.f-dot{width:7px;height:7px;background:#4caf7d;border-radius:50%;flex-shrink:0;animation:pulse 2.2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.5}}
+
+/* ── FLOATING BAR ── */
+#floatbar{position:fixed;bottom:0;left:0;right:0;z-index:90;display:flex;align-items:center;justify-content:flex-end;padding:.7rem 2.5rem;background:rgba(22,22,20,.97);backdrop-filter:blur(12px);border-top:1px solid rgba(247,244,239,.07);transform:translateY(100%);transition:transform .4s cubic-bezier(.4,0,.2,1)}
+#floatbar.show{transform:translateY(0)}
+.fb-inner{display:flex;align-items:center;gap:10px;font-size:11px;color:rgba(247,244,239,.6);letter-spacing:.07em;text-transform:uppercase;font-weight:500;text-decoration:none;transition:color .15s}
+.fb-inner:hover{color:rgba(247,244,239,.9)}
+.fb-dot{width:7px;height:7px;background:#4caf7d;border-radius:50%;animation:pulse 2.2s infinite}
+
+/* ── REVEAL ── */
+.rv{opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s ease}
+.rv.vis{opacity:1;transform:none}
+
+/* ── RESPONSIVE ── */
+@media(max-width:960px){
+  .values-grid{grid-template-columns:1fr 1fr;gap:0}
+  .val{padding:1.5rem;border-right:none;border-bottom:1px solid var(--border-dark)}
+  .val:last-child{border-bottom:none}
+  .val:first-child{padding-left:1.5rem}
+  .cred-grid{grid-template-columns:1fr 1fr}
+  .quote-grid{gap:2.5rem}
+}
+@media(max-width:860px){
+  .hero-grid{grid-template-columns:1fr 180px;gap:2.5rem}
+  .hero-img{aspect-ratio:3/4}
+  .skills-grid{grid-template-columns:1fr}
+  .contact-grid{grid-template-columns:1fr;gap:3rem}
+  .exp-row{grid-template-columns:120px 1fr;gap:1.5rem}
+  .acc-head{grid-template-columns:24px 24px 1fr 1fr 28px}
+}
+@media(max-width:680px){
+  nav{padding:0 1.25rem}
+  .nav-portfolio{display:none}
+  .ham{display:flex}
+  .wrap{padding:0 1.25rem}
+  .hero-grid{grid-template-columns:1fr 140px;gap:1.5rem}
+  .hero-img{aspect-ratio:1/1}
+  .hero-h1{font-size:42px}
+  .acc-head{grid-template-columns:20px 20px 1fr 28px;gap:.75rem}
+  .acc-tagline{display:none}
+  .acc-body{padding-left:calc(20px + 20px + 1.5rem)}
+  .acc-cols{grid-template-columns:1fr}
+  #samples .samples-grid{grid-template-columns:1fr;gap:16px}
+  .exp-row{grid-template-columns:1fr;gap:.75rem}
+  .exp-date{padding-top:0}
+  .quote-grid{grid-template-columns:1fr}
+  footer{flex-direction:column;gap:6px;text-align:center}
+  #floatbar{padding:.7rem 1.25rem}
+}
+@media(max-width:500px){
+  .hero-grid{grid-template-columns:1fr}
+  .hero-img{display:none}
+  .cred-grid{grid-template-columns:1fr}
+  .frow{grid-template-columns:1fr}
+  .hero-stats{grid-template-columns:1fr 1fr}
+  .stat:last-child{border-right:none;margin-right:0}
+}
+</style>
+</head>
+<body>
+<div id="ss-guard"></div>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="#hero" class="nav-brand">
+    <span class="nav-name">Katherine Lean Degala</span>
+    <span class="nav-sub">GenSan, PH &nbsp;·&nbsp; US Time Zone</span>
+  </a>
+  <div class="nav-right">
+    <a href="#samples" class="nav-portfolio">Portfolio</a>
+    <a href="#contact" class="nav-cta">Get in Touch &rarr;</a>
+    <button class="ham" id="ham"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mob" id="mob">
+  <a href="#services" onclick="closeMob()">Services</a>
+  <a href="#samples" onclick="closeMob()">Portfolio</a>
+  <a href="#experience" onclick="closeMob()">Experience</a>
+  <a href="#contact" onclick="closeMob()">Get in Touch</a>
+  <a href="/Katherine_Lean_Degala_Resume.pdf" download="Katherine_Lean_Degala_Resume.pdf" onclick="closeMob()">Download Resume</a>
+</div>
+
+<!-- ════════ HERO ════════ -->
+<section id="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="hero-tag rv">Operations &amp; Systems</div>
+        <h1 class="hero-h1 rv">Executive &amp;<br>Operations<br><span style="color:var(--green-2)">Virtual Assistant</span></h1>
+        <p class="hero-pitch rv">I don't wait to be told what needs doing — I build the systems, deliver the results, and keep everything running so you can focus on growth.</p>
+        <div class="hero-stats rv">
+          <div class="stat">
+            <span class="stat-n">10,000+</span>
+            <span class="stat-l">Agent network<br>supported</span>
+          </div>
+          <div class="stat">
+            <span class="stat-n">100+</span>
+            <span class="stat-l">US clients<br>served</span>
+          </div>
+          <div class="stat">
+            <span class="stat-n">10/10</span>
+            <span class="stat-l">Claude AI<br>Certified</span>
+          </div>
+        </div>
+      </div>
+      <img src="/assets/operator-vibe-B2KcNQ9U.png" alt="Katherine Lean Degala — Executive VA" class="hero-img rv"/>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ TICKER ════════ -->
+<div id="ticker" aria-hidden="true">
+  <div class="ticker-inner" id="ticker-track">
+    <span class="ticker-item">10,000+ Agent Network</span><span class="ticker-sep">✦</span>
+    <span class="ticker-item">100+ US Clients</span><span class="ticker-sep">✦</span>
+    <span class="ticker-item">Zero-Error Standard</span><span class="ticker-sep">✦</span>
+    <span class="ticker-item">Full-Time Remote</span><span class="ticker-sep">✦</span>
+    <span class="ticker-item">US Time Zone Aligned</span><span class="ticker-sep">✦</span>
+    <span class="ticker-item">Available Now</span><span class="ticker-sep">✦</span>
+    <span class="ticker-item">Real Estate Operations</span><span class="ticker-sep">✦</span>
+    <span class="ticker-item">Claude AI Certified</span><span class="ticker-sep">✦</span>
+    <span class="ticker-item">Systems-First Mindset</span><span class="ticker-sep">✦</span>
+    <span class="ticker-item">10,000+ Agent Network</span><span class="ticker-sep">✦</span>
+    <span class="ticker-item">100+ US Clients</span><span class="ticker-sep">✦</span>
+    <span class="ticker-item">Zero-Error Standard</span><span class="ticker-sep">✦</span>
+    <span class="ticker-item">Full-Time Remote</span><span class="ticker-sep">✦</span>
+    <span class="ticker-item">US Time Zone Aligned</span><span class="ticker-sep">✦</span>
+    <span class="ticker-item">Available Now</span><span class="ticker-sep">✦</span>
+    <span class="ticker-item">Real Estate Operations</span><span class="ticker-sep">✦</span>
+    <span class="ticker-item">Claude AI Certified</span><span class="ticker-sep">✦</span>
+    <span class="ticker-item">Systems-First Mindset</span><span class="ticker-sep">✦</span>
+  </div>
+</div>
+
+<!-- ════════ QUOTE BAND ════════ -->
+<div id="quote">
+  <div class="wrap">
+    <div class="quote-grid rv">
+      <p class="quote-text">"13 functions. One person. 10,000-agent brokerage. No supervision. That's the standard I bring to every client."</p>
+      <div class="quote-checks">
+        <div class="qc">
+          <div class="qc-icon"><svg width="10" height="10" viewBox="0 0 12 12" fill="none"><polyline points="2,6 5,9 10,3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <span>Anticipates — doesn't wait to be told</span>
+        </div>
+        <div class="qc">
+          <div class="qc-icon"><svg width="10" height="10" viewBox="0 0 12 12" fill="none"><polyline points="2,6 5,9 10,3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <span>Concise updates. You always know where things stand.</span>
+        </div>
+        <div class="qc">
+          <div class="qc-icon"><svg width="10" height="10" viewBox="0 0 12 12" fill="none"><polyline points="2,6 5,9 10,3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <span>Claude AI certified · Faster output, same accuracy</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════ SERVICES ════════ -->
+<section id="services">
+  <div class="wrap">
+    <div class="section-head rv">
+      <span class="section-label">What I Deliver</span>
+      <span class="section-note">Tap any area to expand</span>
+    </div>
+    <div class="accordion rv">
+
+      <div class="acc-item">
+        <div class="acc-head" onclick="toggleAcc(this)">
+          <span class="acc-num">01</span>
+          <svg class="acc-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <span class="acc-title">Executive Support &amp; Calendar Ownership</span>
+          <span class="acc-tagline">Zero scheduling conflicts. You always know where things stand — without asking.</span>
+          <div class="acc-toggle"></div>
+        </div>
+        <div class="acc-body">
+          <div class="acc-cols">
+            <ul class="acc-list">
+              <li>Full calendar and inbox management</li>
+              <li>Proactive communication — never chase me for updates</li>
+              <li>Meeting prep, documentation, and follow-ups</li>
+              <li>Fast turnaround, consistent delivery</li>
+            </ul>
+            <ul class="acc-list">
+              <li>Email triage and priority flagging — zero inbox overflow</li>
+              <li>Stakeholder communications drafted and sent on your behalf</li>
+              <li>Document prep, formatting, and organized filing systems</li>
+              <li>Travel coordination, logistics, and scheduling handled end-to-end</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="acc-item">
+        <div class="acc-head" onclick="toggleAcc(this)">
+          <span class="acc-num">02</span>
+          <svg class="acc-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v4c0 1.66 4 3 9 3s9-1.34 9-3V5"/><path d="M3 9v4c0 1.66 4 3 9 3s9-1.34 9-3V9"/><path d="M3 13v4c0 1.66 4 3 9 3s9-1.34 9-3v-4"/></svg>
+          <span class="acc-title">Real Estate Operations</span>
+          <span class="acc-tagline">CRM to contract — every step of your pipeline, handled.</span>
+          <div class="acc-toggle"></div>
+        </div>
+        <div class="acc-body">
+          <div class="acc-cols">
+            <ul class="acc-list">
+              <li>Leuterio Realty CRM hygiene — agent profiles, pipeline tracking, status updates</li>
+              <li>Transaction record monitoring and listing content management</li>
+              <li>Sales data encoding from LR Portal into structured Google Sheets</li>
+              <li>Weekly progress summaries with clear status on ongoing recruitment policies/agendas</li>
+            </ul>
+            <ul class="acc-list">
+              <li>End-to-end agent recruitment: outreach → New Agent Orientation → signed contracts</li>
+              <li>Meta Business Suite: recruitment ads, lead encoding, 500+ inquiry management</li>
+              <li>Attendance tracking and Certificate of Participation issuance</li>
+              <li>Custom Google Sheets pipelines with color-coded status dropdowns</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="acc-item">
+        <div class="acc-head" onclick="toggleAcc(this)">
+          <span class="acc-num">03</span>
+          <svg class="acc-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          <span class="acc-title">Remote Operations &amp; Reporting</span>
+          <span class="acc-tagline">Clear daily reports. Founders always know what's happening.</span>
+          <div class="acc-toggle"></div>
+        </div>
+        <div class="acc-body">
+          <div class="acc-cols">
+            <ul class="acc-list">
+              <li>Structured daily narrative reports — delivered every evening, no exceptions</li>
+              <li>High-volume async task execution across 100+ US clients — zero errors, no supervision required</li>
+            </ul>
+            <ul class="acc-list">
+              <li>Cross-referenced observation data against system records before final submission</li>
+              <li>Accurate documentation and record encoding — zero-tolerance error standard maintained throughout</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="acc-item">
+        <div class="acc-head" onclick="toggleAcc(this)">
+          <span class="acc-num">04</span>
+          <svg class="acc-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          <span class="acc-title">AI-Assisted Workflows</span>
+          <span class="acc-tagline">Claude AI certified 10/10. Faster, smarter — without sacrificing accuracy.</span>
+          <div class="acc-toggle"></div>
+        </div>
+        <div class="acc-body">
+          <div class="acc-cols">
+            <ul class="acc-list">
+              <li>AI-assisted research, content drafting, and task automation</li>
+              <li>Quality control stays human — AI accelerates, not replaces</li>
+            </ul>
+            <ul class="acc-list">
+              <li>Prompt engineering for repeatable workflows</li>
+              <li>Claude AI certified by Anthropic · April 2026 · Perfect score</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════ WORK SAMPLES ════════ -->
+<section id="samples">
+  <div class="wrap">
+    <div class="section-head rv">
+      <span class="section-label">Work Samples &amp; Proof</span>
+      <span class="section-note">Watermarked · Names blurred for privacy</span>
+    </div>
+    <p class="rv" style="font-size:13px;color:var(--ink-3);font-weight:300;margin-bottom:1.5rem;max-width:520px">Every sample is drawn from actual work at Filipino Homes VIP Direct GenSan — not mock-ups or simulations.</p>
+    <div class="filter-row rv">
+      <button class="fb active" onclick="fc('all',this)">All</button>
+      <button class="fb" onclick="fc('crm',this)">CRM &amp; Pipeline</button>
+      <button class="fb" onclick="fc('smm',this)">Social Media</button>
+      <button class="fb" onclick="fc('sheets',this)">Google Sheets</button>
+      <button class="fb" onclick="fc('reporting',this)">Reporting</button>
+      <button class="fb" onclick="fc('admin',this)">Admin</button>
+      <button class="fb" onclick="fc('ai',this)">AI &amp; Tools</button>
+    </div>
+  <!-- SAMPLES GRID -->
+  <div class="samples-grid" id="samplesGrid">
+
+    <!-- 1. EXECUTIVE INBOX TRIAGE -->
+    <div class="sample-card" data-cat="admin">
+      <div class="ss-wrap wm-img" onclick="lb(this,'Executive Inbox Triage — Action-Based Label System')">
+        <img src="/assets/email-triage.png" alt="Executive Inbox Triage — Action-based Gmail label system" loading="lazy"/>
+        <div class="ss-overlay"><div class="ss-zoom">⊕ View</div></div>
+        <div class="tool-badge">Gmail</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">Executive Support &amp; Admin</div>
+        <h3 class="card-title">Executive Inbox Triage — Action-Based Label System</h3>
+        <p class="card-desc">Action-based Gmail label system built to remove the CEO as the inbox bottleneck — every email has a next action, nothing sits unresolved.</p>
+        <div class="outcome">
+          <div class="outcome-label">Outcome</div>
+          <div class="outcome-text">CEO only sees decisions. Everything else is handled, labeled, tracked, and moving.</div>
+        </div>
+        <div class="card-tags">
+          <span class="ctag">Gmail</span><span class="ctag">Inbox Triage</span><span class="ctag">Executive Support</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. WEEKLY EXECUTIVE CALENDAR -->
+    <div class="sample-card" data-cat="admin">
+      <div class="ss-wrap wm-img" onclick="lb(this,'Weekly Executive Calendar — Color-coded Priority System')">
+        <img src="/assets/calendar-management.png" alt="Weekly Executive Calendar — Color-coded priority system" loading="lazy"/>
+        <div class="ss-overlay"><div class="ss-zoom">⊕ View</div></div>
+        <div class="tool-badge">Google Calendar</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">Executive Support &amp; Calendar Management</div>
+        <h3 class="card-title">Weekly Executive Calendar — Color-coded Priority System</h3>
+        <p class="card-desc">Structured 5-day executive calendar with color-coded priority blocks — CEO focus time protected, client calls scheduled, admin tasks batched and urgent deadlines flagged.</p>
+        <div class="outcome">
+          <div class="outcome-label">Outcome</div>
+          <div class="outcome-text">Zero scheduling conflicts. CEO focus time protected. Urgent items never missed.</div>
+        </div>
+        <div class="card-tags">
+          <span class="ctag">Google Calendar</span><span class="ctag">Executive Support</span><span class="ctag">Calendar Management</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. RECRUITMENT PIPELINE TRACKER -->
+    <div class="sample-card" data-cat="crm sheets">
+      <div class="ss-wrap wm-img" onclick="lb(this,'Recruitment Pipeline Tracker — Google Sheets')">
+        <img src="/assets/recruitment-pipeline.png" alt="Recruitment Pipeline Tracker — Google Sheets with 100+ candidates, color-coded status dropdowns" loading="lazy"/>
+        <div class="ss-overlay"><div class="ss-zoom">⊕ View</div></div>
+        <div class="tool-badge">Google Sheets</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">CRM & Pipeline Management</div>
+        <h3 class="card-title">Recruitment Pipeline Tracker — 100+ Candidates</h3>
+        <p class="card-desc">Built and managed a custom Google Sheets recruitment tracker for Filipino Homes VIP Direct — tracking 100+ candidates with color-coded status dropdowns (Answered, Unattended, Dropped, Confirm for Schedule), contact details, current job, work experience, and remarks columns.</p>
+        <div class="outcome">
+          <div class="outcome-label">Outcome</div>
+          <div class="outcome-text">Zero missed follow-ups — every candidate had a visible, updated status at all times. Custom dropdowns reduced encoding time and eliminated manual status confusion.</div>
+        </div>
+        <div class="card-tags">
+          <span class="ctag">Google Sheets</span><span class="ctag">CRM</span><span class="ctag">Pipeline Tracking</span><span class="ctag">Custom Dropdowns</span><span class="ctag">Data Management</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. AGENT ONBOARDING TRACKER -->
+    <div class="sample-card" data-cat="crm sheets">
+      <div class="ss-wrap wm-img" onclick="lb(this,'New Agent Onboarding Tracker — Google Sheets')">
+        <img src="/assets/new-agents.png" alt="GENSAN NEW AGENTS 2026 — Onboarding status tracker with FIRE module and NAO progress" loading="lazy"/>
+        <div class="ss-overlay"><div class="ss-zoom">⊕ View</div></div>
+        <div class="tool-badge">Google Sheets</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">Agent Onboarding & CRM</div>
+        <h3 class="card-title">New Agent Onboarding Tracker — GENSAN 2026</h3>
+        <p class="card-desc">Maintained a structured onboarding tracker for all newly recruited agents — monitoring agent status (Active/Unresponsive), invite type (Direct), address, background, date joined, birthday, NAO attendance, and FIRE module progress per agent.</p>
+        <div class="outcome">
+          <div class="outcome-label">Outcome</div>
+          <div class="outcome-text">Leadership had real-time visibility into each agent's onboarding stage without manual check-ins. NAO and FIRE progress tracked per recruit — no agent fell through the cracks.</div>
+        </div>
+        <div class="card-tags">
+          <span class="ctag">Google Sheets</span><span class="ctag">Agent Tracking</span><span class="ctag">Onboarding</span><span class="ctag">FIRE Module</span><span class="ctag">Status Management</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5. SALES DATA TRACKER -->
+    <div class="sample-card" data-cat="sheets reporting">
+      <div class="ss-wrap wm-img" onclick="lb(this,'Sales Data Tracker — Filipino Homes VIP GenSan')">
+        <img src="/assets/sales-tracker.png" alt="Filipino Homes VIP GenSan Sales 2026 — Agent sales data by subteam and project" loading="lazy"/>
+        <div class="ss-overlay"><div class="ss-zoom">⊕ View</div></div>
+        <div class="tool-badge">Google Sheets</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">Sales Data Management & Reporting</div>
+        <h3 class="card-title">Monthly Sales Tracker — FH VIP GenSan 2026</h3>
+        <p class="card-desc">Encoded and maintained monthly agent sales data for Filipino Homes VIP GenSan — tracking agent name, subteam (Alpha, Direct, AllStar), project name, and total sales figures. Data sourced from LR Portal and encoded into structured Google Sheets for management reporting.</p>
+        <div class="outcome">
+          <div class="outcome-label">Outcome</div>
+          <div class="outcome-text">Management received accurate, structured monthly sales summaries — replacing manual tallying with a clean, filterable record. Supported weekly reporting submitted to Team Leaders and HR.</div>
+        </div>
+        <div class="card-tags">
+          <span class="ctag">Google Sheets</span><span class="ctag">Sales Tracking</span><span class="ctag">Data Encoding</span><span class="ctag">LR Portal</span><span class="ctag">Management Reporting</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6. ATTENDANCE TRACKER -->
+    <div class="sample-card" data-cat="sheets reporting">
+      <div class="ss-wrap wm-img" onclick="lb(this,'Kamustahan Attendance Tracker — February 2026')">
+        <img src="/assets/attendance-tracker.png" alt="Kamustahan Attendance February 2026 — Weekly Zoom meeting attendance tracker" loading="lazy"/>
+        <div class="ss-overlay"><div class="ss-zoom">⊕ View</div></div>
+        <div class="tool-badge">Google Sheets</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">Attendance & Documentation</div>
+        <h3 class="card-title">Weekly Kamustahan Attendance Tracker — Feb 2026</h3>
+        <p class="card-desc">Manually recorded and encoded weekly Zoom kamustahan attendance for all agents — tracking presence across four weekly sessions in February 2026. Data distributed to co-secretaries as agent-specific updates and used as basis for Certificate of Participation issuance.</p>
+        <div class="outcome">
+          <div class="outcome-label">Outcome</div>
+          <div class="outcome-text">Accurate attendance records maintained for every Monday Zoom session. Certificates of Participation issued to qualifying agents based on verified records — zero discrepancies reported.</div>
+        </div>
+        <div class="card-tags">
+          <span class="ctag">Google Sheets</span><span class="ctag">Attendance Tracking</span><span class="ctag">Zoom Coordination</span><span class="ctag">Documentation</span><span class="ctag">Certificate Issuance</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 7. META BUSINESS SUITE INBOX -->
+    <div class="sample-card" data-cat="crm smm ai">
+      <div class="ss-wrap wm-img" onclick="lb(this,'Meta Business Suite — Recruitment Lead Inbox Management')">
+        <img src="/assets/meta-inbox.png" alt="Meta Business Suite Inbox — Managing recruitment leads from Facebook ads" loading="lazy"/>
+        <div class="ss-overlay"><div class="ss-zoom">⊕ View</div></div>
+        <div class="tool-badge">Meta Business Suite</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">Lead Management & Client Communication</div>
+        <h3 class="card-title">Recruitment Lead Inbox — Meta Business Suite</h3>
+        <p class="card-desc">Managed incoming recruitment leads from Facebook boosted hiring ads via Meta Business Suite — manually responding to 500+ prospect inquiries using structured screening scripts, collecting candidate details (name, age, contact number, current job), and routing qualified leads to the recruitment pipeline tracker.</p>
+        <div class="outcome">
+          <div class="outcome-label">Outcome</div>
+          <div class="outcome-text">Every lead received a prompt, professional response. Qualified candidates were immediately encoded into the recruitment tracker — zero leads lost or left unresponded in the inbox.</div>
+        </div>
+        <div class="card-tags">
+          <span class="ctag">Meta Business Suite</span><span class="ctag">Lead Management</span><span class="ctag">Client Communication</span><span class="ctag">Recruitment</span><span class="ctag">Facebook Ads</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 8. CONTENT CALENDAR / PLANNER -->
+    <div class="sample-card" data-cat="smm">
+      <div class="ss-wrap wm-img" onclick="lb(this,'Social Media Content Calendar — Meta Business Suite Planner')">
+        <img src="/assets/content-planner.png" alt="Meta Business Suite Content Planner — February 2026 weekly content calendar" loading="lazy"/>
+        <div class="ss-overlay"><div class="ss-zoom">⊕ View</div></div>
+        <div class="tool-badge">Meta Business Suite</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">Social Media Management & Content Scheduling</div>
+        <h3 class="card-title">Weekly Content Calendar — February 2026</h3>
+        <p class="card-desc">Managed the full Facebook content calendar for two pages (GenSan City Properties + FH VIP Direct) via Meta Business Suite Planner — scheduling property listings, recruitment posts, developer promotions, event announcements, and motivational content. Multiple posts per day across both pages, planned and published consistently.</p>
+        <div class="outcome">
+          <div class="outcome-label">Outcome</div>
+          <div class="outcome-text">Both pages maintained consistent daily posting cadence throughout February 2026 — replacing reactive, ad hoc posting with a structured, planned content calendar managed entirely by one person.</div>
+        </div>
+        <div class="card-tags">
+          <span class="ctag">Meta Business Suite</span><span class="ctag">Content Scheduling</span><span class="ctag">Social Media Management</span><span class="ctag">Content Calendar</span><span class="ctag">Facebook Pages</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 9. FACEBOOK POST WITH AI CAPTION -->
+    <div class="sample-card" data-cat="smm ai">
+      <div class="ss-wrap wm-img" onclick="lb(this,'Facebook Post with AI-Assisted Caption — Futura Bay Listing')">
+        <img src="/assets/fb-post-analytics.png" alt="Facebook real estate listing post — AI-assisted caption with hashtags published via Meta Business Suite" loading="lazy"/>
+        <div class="ss-overlay"><div class="ss-zoom">⊕ View</div></div>
+        <div class="tool-badge">AI-Assisted Content</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">AI-Assisted Content Creation</div>
+        <h3 class="card-title">Real Estate Listing Post — AI-Assisted Caption & Hashtags</h3>
+        <p class="card-desc">Created and published a Facebook listing post for Futura Bay — General Santos using AI-assisted caption writing (Claude AI / ChatGPT) for urgency-driven real estate copy, strategic hashtag selection (#FilipinoHomes #FHVipdirect), and brand-aligned formatting. Published via Meta Business Suite under "Kath FH Vip-Staff" account.</p>
+        <div class="outcome">
+          <div class="outcome-label">Outcome</div>
+          <div class="outcome-text">Urgency-driven copy ("Lock in your unit NOW — save up to ₱300,000 before the price hike") produced following SOP and brand guidelines. AI-assisted workflow reduced caption writing time by ~60% while maintaining brand voice.</div>
+        </div>
+        <div class="card-tags">
+          <span class="ctag">Claude AI</span><span class="ctag">ChatGPT</span><span class="ctag">Meta Business Suite</span><span class="ctag">Copywriting</span><span class="ctag">Real Estate Content</span><span class="ctag">Hashtag Strategy</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 10. NOTION VA WORKSPACE -->
+    <div class="sample-card" data-cat="ai">
+      <div class="ss-wrap wm-img" onclick="lb(this,'Notion VA Operations Hub — Personal Workspace Build')">
+        <img src="/assets/notion-workspace.png" alt="Notion VA Workspace" loading="lazy"/>
+        <div class="ss-overlay"><div class="ss-zoom">⊕ View</div></div>
+        <div class="tool-badge">Notion</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">AI &amp; Productivity Tools</div>
+        <h3 class="card-title">Notion VA Operations Hub — Personal Workspace Build</h3>
+        <p class="card-desc">Built personal VA workspace with Quick Access, Job Applications tracker, Daily Wins log, and CRM systems — tools I can replicate for client operations.</p>
+        <div class="outcome">
+          <div class="outcome-label">Outcome</div>
+          <div class="outcome-text">Built from scratch: Quick Access panel, Job Applications tracker, Daily Wins log, and CRM — fully replicable for any client.</div>
+        </div>
+        <div class="card-tags">
+          <span class="ctag">Notion</span><span class="ctag">Workspace Design</span><span class="ctag">Systems</span>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- end samples-grid -->
+  </div>
+</section>
+<!-- LIGHTBOX -->
+<div id="lb" onclick="clb()">
+  <button id="lb-x" onclick="clb()">✕ Close</button>
+  <img id="lb-img" src="" alt=""/>
+  <div id="lb-lbl"></div>
+</div>
+
+<!-- ════════ EXPERIENCE ════════ -->
+<section id="experience">
+  <div class="wrap">
+    <div class="exp-heading rv">
+      <span class="section-label">Track Record</span>
+      <h2 class="exp-h">Experience</h2>
+    </div>
+
+    <div class="exp-row rv">
+      <div class="exp-date">
+        <span class="exp-period">Jan–Mar 2026</span>
+        <span class="exp-type">Real Estate</span>
+      </div>
+      <div class="exp-card">
+        <div class="exp-title">Branch Secretary &amp; Office Staff</div>
+        <div class="exp-company">Filipino Homes</div>
+        <div class="exp-context">Sole operations staff · Deployed independently in GenSan · 450+ teams · 10,000+ agents</div>
+        <ul class="exp-bullets">
+          <li>Leuterio Realty CRM administration</li>
+          <li>Meta Business Suite for recruitment ads (500+ inquiries)</li>
+          <li>End-to-end agent recruitment pipeline</li>
+        </ul>
+        <div class="exp-tags">
+          <span class="exp-tag">13+ Functions</span>
+          <span class="exp-tag">450+ Teams</span>
+          <span class="exp-tag">10,000+ Agents</span>
+          <span class="exp-tag">UAE · Japan · Dubai GCS</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="exp-row rv">
+      <div class="exp-date">
+        <span class="exp-period">Jul–Sep 2025</span>
+        <span class="exp-type">Remote · US-Based</span>
+      </div>
+      <div class="exp-card">
+        <div class="exp-title">Associate Theft Investigator</div>
+        <div class="exp-company">Panoptyc</div>
+        <div class="exp-context">US-Based Retail Intelligence Platform · Fully remote · Asynchronous workflow</div>
+        <ul class="exp-bullets">
+          <li>Reviewed high-volume surveillance footage and produced incident reports for 100+ US retail clients</li>
+          <li>Encoded timestamped case files with zero-tolerance accuracy</li>
+          <li>Cross-referenced video observations against system records</li>
+        </ul>
+        <div class="exp-tags">
+          <span class="exp-tag">100+ US Clients</span>
+          <span class="exp-tag">Zero-Error Standard</span>
+          <span class="exp-tag">Fully Remote</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="exp-row rv">
+      <div class="exp-date">
+        <span class="exp-period">Jun–Jul 2024</span>
+        <span class="exp-type">Government · HR</span>
+      </div>
+      <div class="exp-card">
+        <div class="exp-title">HR Assistant (Internship)</div>
+        <div class="exp-company">Dept. of Trade &amp; Industry</div>
+        <div class="exp-context">Government Agency · HR Department · General Santos City</div>
+        <ul class="exp-bullets">
+          <li>Verified employee personnel and salary records</li>
+          <li>Supported recruitment coordination</li>
+          <li>Maintained daily attendance logs</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ════════ VALUE PROPS ════════ -->
+<section id="values">
+  <div class="wrap">
+    <div class="values-grid">
+      <div class="val rv">
+        <div class="val-title">High-signal, low-noise</div>
+        <div class="val-desc">Concise updates. You always know — without asking.</div>
+      </div>
+      <div class="val rv">
+        <div class="val-title">Systems-first mindset</div>
+        <div class="val-desc">Repeatable workflows built to scale.</div>
+      </div>
+      <div class="val rv">
+        <div class="val-title">Zero-tolerance accuracy</div>
+        <div class="val-desc">500+ agents. 100+ US clients. No errors.</div>
+      </div>
+      <div class="val rv">
+        <div class="val-title">AI-assisted, not AI-dependent</div>
+        <div class="val-desc">Claude AI certified 10/10 · Anthropic 2026.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ SKILLS & TOOLS ════════ -->
+<section id="skills">
+  <div class="wrap">
+    <div class="skills-grid">
+      <div class="rv">
+        <span class="skills-col-label">Core Skills</span>
+        <div class="skill-pills">
+          <span class="skill-pill">Executive &amp; Admin Support</span>
+          <span class="skill-pill">Calendar &amp; Inbox Management</span>
+          <span class="skill-pill">CRM Administration</span>
+          <span class="skill-pill">Real Estate Operations</span>
+          <span class="skill-pill">Agent Recruitment &amp; Pipeline</span>
+          <span class="skill-pill">Events &amp; Webinar Coordination</span>
+          <span class="skill-pill">AI-Assisted Workflows</span>
+          <span class="skill-pill">Daily Narrative Reporting</span>
+          <span class="skill-pill">Social Media Management</span>
+          <span class="skill-pill">Process &amp; Systems Building</span>
+        </div>
+      </div>
+      <div class="rv">
+        <span class="skills-col-label">Tools &amp; Software</span>
+        <div class="tools-list">
+          <div class="tool-row">
+            <span class="tool-cat">Real Estate &amp; CRM</span>
+            <span class="tool-items">Leuterio Realty CRM · Agent Certification Tracking · Rent.ph · Google Sheets</span>
+          </div>
+          <div class="tool-row">
+            <span class="tool-cat">Productivity</span>
+            <span class="tool-items">Google Workspace · Microsoft Office · Notion · Slack · Clockify</span>
+          </div>
+          <div class="tool-row">
+            <span class="tool-cat">Communication</span>
+            <span class="tool-items">Zoom · Google Meet · Gmail · Facebook GC Management</span>
+          </div>
+          <div class="tool-row">
+            <span class="tool-cat">Content &amp; Design</span>
+            <span class="tool-items">Canva · CapCut · Meta Business Suite · Facebook Ads</span>
+          </div>
+          <div class="tool-row">
+            <span class="tool-cat">AI &amp; Writing</span>
+            <span class="tool-items">Claude AI (Certified 10/10) · ChatGPT · Grammarly</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ CREDENTIALS ════════ -->
+<section id="credentials">
+  <div class="wrap">
+    <div class="section-head rv">
+      <span class="section-label">Credentials</span>
+    </div>
+    <div class="cred-grid rv">
+      <div class="cred-card">
+        <span class="cred-inst">Anthropic Academy</span>
+        <div class="cred-title">Claude 101</div>
+        <div class="cred-desc">Certified · Perfect score 10/10 · Apr 2026</div>
+      </div>
+      <div class="cred-card">
+        <span class="cred-inst">Filipino Homes Institute</span>
+        <div class="cred-title">Real Estate Ops Coordination</div>
+        <div class="cred-desc">Live 10,000-agent brokerage · 2026</div>
+      </div>
+      <div class="cred-card">
+        <span class="cred-inst">Mindanao State University</span>
+        <div class="cred-title">BA English Language Studies</div>
+        <div class="cred-desc">Graduated · 2025</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ UPSKILLING ════════ -->
+<section id="upskilling">
+  <div class="wrap">
+    <div class="upskill-grid rv">
+      <div>
+        <h2 class="upskill-h">Currently upskilling.<br>For your benefit.</h2>
+        <p class="upskill-p">Beyond my FH experience, I'm actively building new capabilities in automation, AI workflows, and productivity systems — specifically to serve real estate clients at a higher level. These are tools I'm learning now, so I can deploy them for you immediately.</p>
+      </div>
+      <div class="upskill-cards">
+        <div class="usk-card">
+          <span class="usk-emoji">⚡</span>
+          <div class="usk-title">n8n Automation Workflows</div>
+          <div class="usk-desc">Building lead generation forms with AI qualification — form submission → AI scoring → data storage → automated email follow-up for high-quality leads.</div>
+          <span class="usk-badge progress">In progress</span>
+        </div>
+        <div class="usk-card">
+          <span class="usk-emoji">📋</span>
+          <div class="usk-title">Notion — VA Operations Hub</div>
+          <div class="usk-desc">Built personal VA workspace with Quick Access, Job Applications tracker, Daily Wins log, and CRM systems — tools I can replicate for client operations.</div>
+          <span class="usk-badge active">Active</span>
+        </div>
+        <div class="usk-card">
+          <span class="usk-emoji">💬</span>
+          <div class="usk-title">Slack — Team Communications</div>
+          <div class="usk-desc">Producing structured weekly CRM and listings update reports via Slack — demonstrated in a live real estate team channel format with priority items and next steps.</div>
+          <span class="usk-badge practiced">Practiced</span>
+        </div>
+        <div class="usk-card">
+          <span class="usk-emoji">🤖</span>
+          <div class="usk-title">Claude AI — Certified</div>
+          <div class="usk-desc">Claude 101 by Anthropic — completed with a perfect 10/10 score. Applied daily in content production, report writing, caption generation, and VA workflow optimization.</div>
+          <span class="usk-badge certified">Certified · April 2026</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ CONTACT ════════ -->
+<section id="contact">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="rv">
+        <h2 class="contact-h">One message.<br>I'll take it from there.</h2>
+        <p class="contact-avail">Full-time remote. US time zone. Available now.</p>
+        <div class="contact-dets">
+          <div class="cd">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 7L2 7"/></svg>
+            <a href="mailto:degalakatherinelean@gmail.com">degalakatherinelean@gmail.com</a>
+          </div>
+          <div class="cd">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="17"/><line x1="9" y1="14.5" x2="15" y2="14.5"/></svg>
+            <span>Upwork &nbsp;·&nbsp; OnlineJobs.ph</span>
+          </div>
+          <div class="cd">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>GenSan, PH &nbsp;·&nbsp; US time zone aligned</span>
+          </div>
+        </div>
+        <a href="/Katherine_Lean_Degala_Resume.pdf" download="Katherine_Lean_Degala_Resume.pdf" class="contact-resume">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Resume
+        </a>
+      </div>
+
+      <div class="rv">
+        <form class="cform" id="cf" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="contact"/>
+          <div style="display:none"><input name="bot-field"/></div>
+          <div class="frow">
+            <div class="fg">
+              <label>Your Name *</label>
+              <input type="text" name="name" placeholder="Jane Smith" required/>
+            </div>
+            <div class="fg">
+              <label>Email *</label>
+              <input type="email" name="email" placeholder="jane@company.com" required/>
+            </div>
+          </div>
+          <div class="fg">
+            <label>Role / How Can I Help?</label>
+            <select name="role" required>
+              <option value="" disabled selected>Select one…</option>
+              <option>Executive VA — Full Time</option>
+              <option>Operations VA — Full Time</option>
+              <option>Real Estate Admin VA</option>
+              <option>Part-Time / Project Based</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="fg">
+            <label>Message *</label>
+            <textarea name="message" placeholder="Tell me about your business and what you need help with…" required></textarea>
+          </div>
+          <button type="submit" class="btn-sub">Send Message &rarr;</button>
+        </form>
+        <div class="f-success" id="fsuc">
+          <h3>Message received.</h3>
+          <p style="font-size:12px;color:rgba(247,244,239,.4);margin-top:.35rem">Thank you — I'll be in touch within 24 hours.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER inside contact dark section -->
+  <footer>
+    <span class="f-copy">© 2026 Katherine Lean Degala. All rights reserved.</span>
+    <a href="#contact" class="f-avail">
+      <span class="f-dot"></span>
+      Available Now &nbsp;·&nbsp; Let's Talk &rarr;
+    </a>
+  </footer>
+</section>
+
+<!-- FLOATING BAR -->
+<div id="floatbar">
+  <a href="#contact" class="fb-inner">
+    <span class="fb-dot"></span>
+    Available Now &nbsp;·&nbsp; Let's Talk &rarr;
+  </a>
+</div>
+
+<script>
+// ── PROTECTION ──
+document.addEventListener('contextmenu',e=>e.preventDefault());
+document.addEventListener('selectstart',e=>e.preventDefault());
+document.addEventListener('dragstart',e=>e.preventDefault());
+document.addEventListener('keydown',e=>{
+  if((e.ctrlKey||e.metaKey)&&['p','s','u'].includes(e.key))e.preventDefault();
+});
+document.addEventListener('keyup',e=>{
+  if(e.key==='PrintScreen'){
+    const g=document.getElementById('ss-guard');
+    g.style.display='block';
+    navigator.clipboard.writeText('').catch(()=>{});
+    setTimeout(()=>g.style.display='none',1500);
+  }
+});
+
+// ── MOBILE MENU ──
+document.getElementById('ham').addEventListener('click',()=>document.getElementById('mob').classList.toggle('open'));
+function closeMob(){document.getElementById('mob').classList.remove('open')}
+
+// ── NAV SCROLL ──
+window.addEventListener('scroll',()=>{
+  document.getElementById('nav').classList.toggle('scrolled',window.scrollY>20);
+  document.getElementById('floatbar').classList.toggle('show',window.scrollY>400);
+},{passive:true});
+
+// ── ACCORDION ──
+function toggleAcc(head){
+  const item=head.parentElement;
+  const wasOpen=item.classList.contains('open');
+  document.querySelectorAll('.acc-item').forEach(i=>i.classList.remove('open'));
+  if(!wasOpen)item.classList.add('open');
+}
+
+// ── FILTER ──
+function fc(cat,btn){
+  document.querySelectorAll('.fb').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.sample-card').forEach(c=>{
+    const cats=c.dataset.cat||'';
+    if(cat==='all'||cats.includes(cat)){
+      c.style.display='';
+      setTimeout(()=>c.classList.add('vis'),40);
+    } else {
+      c.style.display='none';
+      c.classList.remove('vis');
+    }
+  });
+}
+
+// ── LIGHTBOX ──
+function lb(el,label){
+  const img=el.querySelector('img');
+  if(!img||!img.src||img.naturalWidth===0)return;
+  document.getElementById('lb-img').src=img.src;
+  document.getElementById('lb-lbl').textContent=label||'';
+  document.getElementById('lb').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function clb(){
+  document.getElementById('lb').classList.remove('open');
+  document.body.style.overflow='';
+}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')clb()});
+
+// ── SCROLL REVEAL ──
+const ro=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('vis');ro.unobserve(e.target)}});
+},{threshold:.05,rootMargin:'0px 0px -20px 0px'});
+document.querySelectorAll('.rv').forEach(el=>ro.observe(el));
+
+// ── SAMPLE CARDS ──
+const co=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('vis');co.unobserve(e.target)}});
+},{threshold:.04});
+document.querySelectorAll('.sample-card').forEach((c,i)=>{c.style.transitionDelay=`${i*0.08}s`;co.observe(c)});
+
+// ── CONTACT FORM ──
+const cf=document.getElementById('cf');
+if(cf){
+  cf.addEventListener('submit',async e=>{
+    e.preventDefault();
+    const btn=cf.querySelector('.btn-sub');
+    btn.textContent='Sending…';btn.disabled=true;
+    try{
+      await fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(new FormData(cf)).toString()});
+      cf.style.display='none';
+      document.getElementById('fsuc').style.display='block';
+    }catch{
+      btn.textContent='Error — email me directly';btn.disabled=false;
+    }
+  });
+}
+
+// ── SMOOTH LOAD ──
+document.body.style.opacity='0';
+document.body.style.transition='opacity .4s ease';
+window.addEventListener('load',()=>{document.body.style.opacity='1'});
+</script>
+</body>
+</html>

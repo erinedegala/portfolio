@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Katherine Lean Degala — Work Samples & Tool Demonstrations</title>
+<meta name="description" content="Real work samples from Katherine Lean Degala — CRM management, recruitment pipeline, social media, reporting, and AI-assisted workflows."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --cream:#f7f4ef;--cream-2:#efe9e0;--cream-3:#e5e0d5;
+  --ink:#1a1a18;--ink-2:#3d3d3a;--ink-3:#7a7a74;
+  --green:#1e3d2f;--green-2:#2d5a3d;--green-light:#e8f0eb;
+  --border:rgba(26,26,24,0.1);--border-2:rgba(26,26,24,0.05);
+  --serif:'Cormorant Garamond',Georgia,serif;
+  --sans:'Inter',system-ui,sans-serif;
+  --r:4px;--r-lg:12px;
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--cream);color:var(--ink);font-size:15px;line-height:1.7;-webkit-font-smoothing:antialiased}
+
+/* PROTECTION */
+#ss-guard{display:none;position:fixed;inset:0;background:var(--cream);z-index:99999}
+.wm{position:relative;overflow:hidden}
+.wm::after{
+  content:"© Katherine Lean Degala · Not for reproduction · katherineneleandegala.netlify.app";
+  position:absolute;top:50%;left:50%;
+  transform:translate(-50%,-50%) rotate(-25deg);
+  font-size:11px;color:rgba(26,26,24,0.07);
+  white-space:nowrap;pointer-events:none;z-index:10;
+  width:200%;text-align:center;letter-spacing:.04em;
+  font-family:var(--sans);
+}
+
+/* TOP BAR */
+.top-bar{background:var(--green);color:rgba(247,244,239,.75);font-size:11px;text-align:center;padding:7px 1rem;letter-spacing:.06em}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:100;background:rgba(247,244,239,.95);backdrop-filter:blur(14px);border-bottom:1px solid var(--border);height:58px;display:flex;align-items:center;justify-content:space-between;padding:0 2.5rem}
+.nav-logo{font-family:var(--serif);font-size:18px;color:var(--ink);text-decoration:none;font-style:italic}
+.nav-right{display:flex;align-items:center;gap:12px}
+.nav-back{font-size:12px;color:var(--ink-2);text-decoration:none;padding:7px 16px;border:1px solid var(--border);border-radius:20px;transition:all .15s;letter-spacing:.03em}
+.nav-back:hover{border-color:var(--ink);color:var(--ink)}
+.nav-cta{font-size:12px;color:var(--cream);background:var(--ink);text-decoration:none;padding:7px 18px;border-radius:20px;font-weight:500;transition:all .15s}
+.nav-cta:hover{background:var(--green)}
+
+/* LAYOUT */
+.wrap{max-width:1080px;margin:0 auto;padding:0 2.5rem}
+.wrap-sm{max-width:720px;margin:0 auto;padding:0 2.5rem}
+
+/* HERO */
+.hero{padding:5rem 0 3rem;background:var(--cream)}
+.eyebrow{font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--green-2);margin-bottom:1rem;display:flex;align-items:center;gap:10px}
+.eyebrow::before{content:'';display:inline-block;width:18px;height:1px;background:var(--green-2)}
+.hero h1{font-family:var(--serif);font-size:clamp(36px,5vw,56px);line-height:1.05;letter-spacing:-.02em;margin-bottom:1rem}
+.hero h1 em{font-style:italic;color:var(--green)}
+.hero-sub{font-size:16px;color:var(--ink-2);line-height:1.8;font-weight:300;max-width:580px;margin-bottom:2rem}
+.hero-note{display:inline-flex;align-items:center;gap:8px;font-size:12px;color:var(--ink-3);background:var(--cream-2);padding:8px 16px;border-radius:20px;border:1px solid var(--border)}
+
+/* FILTER NAV */
+.filter-wrap{padding:2rem 0 1rem;border-bottom:1px solid var(--border);margin-bottom:2.5rem}
+.filter-row{display:flex;gap:8px;flex-wrap:wrap}
+.filter-btn{font-size:12px;padding:7px 16px;border-radius:20px;border:1px solid var(--border);background:transparent;color:var(--ink-2);cursor:pointer;transition:all .15s;letter-spacing:.02em}
+.filter-btn:hover{border-color:var(--ink);color:var(--ink)}
+.filter-btn.active{background:var(--ink);color:var(--cream);border-color:var(--ink)}
+
+/* SAMPLE GRID */
+.samples-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;padding-bottom:5rem}
+
+/* SAMPLE CARD */
+.sample-card{border:1px solid var(--border);border-radius:var(--r-lg);overflow:hidden;background:var(--cream);transition:all .25s;opacity:0;transform:translateY(16px)}
+.sample-card.visible{opacity:1;transform:translateY(0)}
+.sample-card:hover{border-color:var(--green-2);box-shadow:0 8px 32px rgba(0,0,0,.08);transform:translateY(-3px)}
+
+/* SCREENSHOT CONTAINER */
+.ss-wrap{position:relative;overflow:hidden;background:var(--cream-2);cursor:pointer;aspect-ratio:16/10}
+.ss-wrap img{width:100%;height:100%;object-fit:cover;object-position:top;transition:transform .4s ease;display:block}
+.ss-wrap:hover img{transform:scale(1.02)}
+.ss-overlay{position:absolute;inset:0;background:rgba(26,26,24,0);transition:background .3s;display:flex;align-items:center;justify-content:center}
+.ss-wrap:hover .ss-overlay{background:rgba(26,26,24,.35)}
+.ss-zoom{opacity:0;font-size:13px;color:#fff;font-weight:500;letter-spacing:.05em;transition:opacity .3s;display:flex;align-items:center;gap:8px}
+.ss-wrap:hover .ss-zoom{opacity:1}
+.tool-badge{position:absolute;top:12px;left:12px;font-size:10px;padding:4px 10px;background:rgba(26,26,24,.8);color:#fff;border-radius:20px;letter-spacing:.06em;text-transform:uppercase;backdrop-filter:blur(8px)}
+.wm-img::after{
+  content:"© Katherine Lean Degala";
+  position:absolute;top:50%;left:50%;
+  transform:translate(-50%,-50%) rotate(-20deg);
+  font-size:13px;color:rgba(255,255,255,0.15);
+  white-space:nowrap;pointer-events:none;z-index:5;
+  letter-spacing:.08em;font-family:var(--sans);font-weight:500;
+  text-shadow:0 1px 3px rgba(0,0,0,.3);
+  width:100%;text-align:center;
+}
+
+/* CARD CONTENT */
+.card-body{padding:1.5rem}
+.card-category{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--green-2);font-weight:500;margin-bottom:.5rem}
+.card-title{font-family:var(--serif);font-size:18px;color:var(--ink);line-height:1.2;margin-bottom:.75rem}
+.card-desc{font-size:13px;color:var(--ink-2);line-height:1.7;font-weight:300;margin-bottom:1rem}
+
+/* OUTCOME BLOCK */
+.outcome{background:var(--green-light);border-left:3px solid var(--green-2);padding:.75rem 1rem;border-radius:0 var(--r) var(--r) 0;margin-bottom:1rem}
+.outcome-label{font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--green-2);font-weight:500;margin-bottom:3px}
+.outcome-text{font-size:12px;color:var(--green);font-weight:400;line-height:1.5}
+
+/* SKILL TAGS */
+.card-tags{display:flex;flex-wrap:wrap;gap:5px}
+.ctag{font-size:11px;padding:3px 9px;background:var(--cream-2);color:var(--ink-2);border-radius:2px;border:1px solid var(--border)}
+
+/* LIGHTBOX */
+#lightbox{display:none;position:fixed;inset:0;background:rgba(26,26,24,.92);z-index:9999;align-items:center;justify-content:center;padding:2rem}
+#lightbox.open{display:flex}
+#lightbox img{max-width:90vw;max-height:85vh;object-fit:contain;border-radius:var(--r);user-select:none}
+#lightbox-close{position:absolute;top:1.5rem;right:1.5rem;background:rgba(247,244,239,.15);border:1px solid rgba(247,244,239,.2);color:#fff;font-size:14px;padding:8px 18px;border-radius:20px;cursor:pointer;letter-spacing:.05em;backdrop-filter:blur(8px)}
+#lightbox-close:hover{background:rgba(247,244,239,.25)}
+#lightbox-label{position:absolute;bottom:1.5rem;left:50%;transform:translateX(-50%);font-size:12px;color:rgba(247,244,239,.5);letter-spacing:.05em;text-align:center}
+
+/* BOTTOM CTA */
+.bottom-cta{background:var(--ink);padding:4rem 0;text-align:center}
+.bottom-cta h2{font-family:var(--serif);font-size:clamp(28px,4vw,42px);color:#fff;margin-bottom:.75rem}
+.bottom-cta p{font-size:15px;color:rgba(247,244,239,.6);font-weight:300;margin-bottom:2rem;max-width:480px;margin-left:auto;margin-right:auto}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 28px;border-radius:2px;font-size:13px;font-weight:500;text-decoration:none;transition:all .18s;font-family:var(--sans);letter-spacing:.03em}
+.btn-light{background:var(--cream);color:var(--ink)}
+.btn-light:hover{background:var(--cream-2)}
+.btn-outline-light{background:transparent;color:rgba(247,244,239,.8);border:1px solid rgba(247,244,239,.25);margin-left:12px}
+.btn-outline-light:hover{background:rgba(247,244,239,.1)}
+
+/* FOOTER */
+footer{background:var(--ink);border-top:1px solid rgba(247,244,239,.08);padding:1.5rem 2.5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+.f-name{font-family:var(--serif);font-size:15px;color:rgba(247,244,239,.5);font-style:italic}
+.f-copy{font-size:11px;color:rgba(247,244,239,.3)}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  nav{padding:0 1.25rem}
+  .wrap,.wrap-sm{padding:0 1.25rem}
+  .hero{padding:3.5rem 0 2rem}
+  .samples-grid{grid-template-columns:1fr}
+  footer{flex-direction:column;text-align:center}
+  .btn-outline-light{margin-left:0;margin-top:10px}
+}
+
+/* ANIMATIONS */
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+</style>
+</head>
+<body>
+<div id="ss-guard"></div>
+
+<div class="top-bar">© 2026 Katherine Lean Degala · Work Samples · All content protected · Unauthorized use prohibited</div>
+
+<nav>
+  <a href="https://katherineneleandegala.netlify.app" class="nav-logo">Katherine Lean Degala</a>
+  <div class="nav-right">
+    <a href="https://katherineneleandegala.netlify.app" class="nav-back">← Back to Portfolio</a>
+    <a href="mailto:degalakatherinelean@gmail.com" class="nav-cta">Let's Talk →</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="wrap-sm">
+    <div class="eyebrow reveal">Work samples & tool demonstrations</div>
+    <h1 class="reveal">Real work.<br><em>Real tools. Real outcomes.</em></h1>
+    <p class="hero-sub reveal">Every sample below is drawn from actual work at Filipino Homes VIP Direct GenSan — not mock-ups or simulations. These demonstrate how I navigate, manage, and deliver across six core tool categories.</p>
+    <div class="hero-note reveal">🔒 All samples are watermarked and protected · Names blurred for privacy</div>
+  </div>
+</div>
+
+<!-- FILTER -->
+<div class="wrap">
+  <div class="filter-wrap reveal">
+    <div class="filter-row" id="filterRow">
+      <button class="filter-btn active" onclick="filterCards('all',this)">All Samples</button>
+      <button class="filter-btn" onclick="filterCards('crm',this)">CRM & Pipeline</button>
+      <button class="filter-btn" onclick="filterCards('smm',this)">Social Media</button>
+      <button class="filter-btn" onclick="filterCards('sheets',this)">Google Sheets</button>
+      <button class="filter-btn" onclick="filterCards('reporting',this)">Reporting & Tracking</button>
+      <button class="filter-btn" onclick="filterCards('ai',this)">AI-Assisted</button>
+    </div>
+  </div>
+
+  <!-- SAMPLES GRID -->
+  <div class="samples-grid" id="samplesGrid">
+
+    <!-- 1. EXECUTIVE INBOX TRIAGE -->
+    <div class="sample-card" data-cat="admin">
+      <div class="ss-wrap wm-img" onclick="openLightbox('img-email-triage','Executive Inbox Triage — Action-Based Label System')">
+        <img src="/email-triage.png" alt="Executive Inbox Triage — Action-based Gmail label system" loading="lazy"/>
+        <div class="ss-overlay"><div class="ss-zoom">⊕ View Sample</div></div>
+        <div class="tool-badge">Gmail</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">Executive Support &amp; Admin</div>
+        <h3 class="card-title">Executive Inbox Triage — Action-Based Label System</h3>
+        <p class="card-desc">Action-based Gmail label system built to remove the CEO as the inbox bottleneck — every email has a next action, nothing sits unresolved.</p>
+        <div class="outcome">
+          <div class="outcome-label">Outcome</div>
+          <div class="outcome-text">CEO only sees decisions. Everything else is handled, labeled, tracked, and moving.</div>
+        </div>
+        <div class="card-tags">
+          <span class="ctag">Gmail</span><span class="ctag">Inbox Triage</span><span class="ctag">Executive Support</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. WEEKLY EXECUTIVE CALENDAR -->
+    <div class="sample-card" data-cat="admin">
+      <div class="ss-wrap wm-img" onclick="openLightbox('img-calendar','Weekly Executive Calendar — Color-coded Priority System')">
+        <img src="/calendar-management.png" alt="Weekly Executive Calendar — Color-coded priority system" loading="lazy"/>
+        <div class="ss-overlay"><div class="ss-zoom">⊕ View Sample</div></div>
+        <div class="tool-badge">Google Calendar</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">Executive Support &amp; Calendar Management</div>
+        <h3 class="card-title">Weekly Executive Calendar — Color-coded Priority System</h3>
+        <p class="card-desc">Structured 5-day executive calendar with color-coded priority blocks — CEO focus time protected, client calls scheduled, admin tasks batched and urgent deadlines flagged.</p>
+        <div class="outcome">
+          <div class="outcome-label">Outcome</div>
+          <div class="outcome-text">Zero scheduling conflicts. CEO focus time protected. Urgent items never missed.</div>
+        </div>
+        <div class="card-tags">
+          <span class="ctag">Google Calendar</span><span class="ctag">Executive Support</span><span class="ctag">Calendar Management</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. RECRUITMENT PIPELINE TRACKER -->
+    <div class="sample-card" data-cat="crm sheets">
+      <div class="ss-wrap wm-img" onclick="openLightbox('img-recruit-pipeline','Recruitment Pipeline Tracker — Google Sheets')">
+        <img src="/recruitment-pipeline.png" alt="Recruitment Pipeline Tracker — Google Sheets with 100+ candidates, color-coded status dropdowns" loading="lazy"/>
+        <div class="ss-overlay"><div class="ss-zoom">⊕ View Sample</div></div>
+        <div class="tool-badge">Google Sheets</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">CRM & Pipeline Management</div>
+        <h3 class="card-title">Recruitment Pipeline Tracker — 100+ Candidates</h3>
+        <p class="card-desc">Built and managed a custom Google Sheets recruitment tracker for Filipino Homes VIP Direct — tracking 100+ candidates with color-coded status dropdowns (Answered, Unattended, Dropped, Confirm for Schedule), contact details, current job, work experience, and remarks columns.</p>
+        <div class="outcome">
+          <div class="outcome-label">Outcome</div>
+          <div class="outcome-text">Zero missed follow-ups — every candidate had a visible, updated status at all times. Custom dropdowns reduced encoding time and eliminated manual status confusion.</div>
+        </div>
+        <div class="card-tags">
+          <span class="ctag">Google Sheets</span><span class="ctag">CRM</span><span class="ctag">Pipeline Tracking</span><span class="ctag">Custom Dropdowns</span><span class="ctag">Data Management</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. AGENT ONBOARDING TRACKER -->
+    <div class="sample-card" data-cat="crm sheets">
+      <div class="ss-wrap wm-img" onclick="openLightbox('img-agents','New Agent Onboarding Tracker — Google Sheets')">
+        <img src="/new-agents.png" alt="GENSAN NEW AGENTS 2026 — Onboarding status tracker with FIRE module and NAO progress" loading="lazy"/>
+        <div class="ss-overlay"><div class="ss-zoom">⊕ View Sample</div></div>
+        <div class="tool-badge">Google Sheets</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">Agent Onboarding & CRM</div>
+        <h3 class="card-title">New Agent Onboarding Tracker — GENSAN 2026</h3>
+        <p class="card-desc">Maintained a structured onboarding tracker for all newly recruited agents — monitoring agent status (Active/Unresponsive), invite type (Direct), address, background, date joined, birthday, NAO attendance, and FIRE module progress per agent.</p>
+        <div class="outcome">
+          <div class="outcome-label">Outcome</div>
+          <div class="outcome-text">Leadership had real-time visibility into each agent's onboarding stage without manual check-ins. NAO and FIRE progress tracked per recruit — no agent fell through the cracks.</div>
+        </div>
+        <div class="card-tags">
+          <span class="ctag">Google Sheets</span><span class="ctag">Agent Tracking</span><span class="ctag">Onboarding</span><span class="ctag">FIRE Module</span><span class="ctag">Status Management</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5. SALES DATA TRACKER -->
+    <div class="sample-card" data-cat="sheets reporting">
+      <div class="ss-wrap wm-img" onclick="openLightbox('img-sales','Sales Data Tracker — Filipino Homes VIP GenSan')">
+        <img src="/sales-tracker.png" alt="Filipino Homes VIP GenSan Sales 2026 — Agent sales data by subteam and project" loading="lazy"/>
+        <div class="ss-overlay"><div class="ss-zoom">⊕ View Sample</div></div>
+        <div class="tool-badge">Google Sheets</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">Sales Data Management & Reporting</div>
+        <h3 class="card-title">Monthly Sales Tracker — FH VIP GenSan 2026</h3>
+        <p class="card-desc">Encoded and maintained monthly agent sales data for Filipino Homes VIP GenSan — tracking agent name, subteam (Alpha, Direct, AllStar), project name, and total sales figures. Data sourced from LR Portal and encoded into structured Google Sheets for management reporting.</p>
+        <div class="outcome">
+          <div class="outcome-label">Outcome</div>
+          <div class="outcome-text">Management received accurate, structured monthly sales summaries — replacing manual tallying with a clean, filterable record. Supported weekly reporting submitted to Team Leaders and HR.</div>
+        </div>
+        <div class="card-tags">
+          <span class="ctag">Google Sheets</span><span class="ctag">Sales Tracking</span><span class="ctag">Data Encoding</span><span class="ctag">LR Portal</span><span class="ctag">Management Reporting</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6. ATTENDANCE TRACKER -->
+    <div class="sample-card" data-cat="sheets reporting">
+      <div class="ss-wrap wm-img" onclick="openLightbox('img-attendance','Kamustahan Attendance Tracker — February 2026')">
+        <img src="/attendance-tracker.png" alt="Kamustahan Attendance February 2026 — Weekly Zoom meeting attendance tracker" loading="lazy"/>
+        <div class="ss-overlay"><div class="ss-zoom">⊕ View Sample</div></div>
+        <div class="tool-badge">Google Sheets</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">Attendance & Documentation</div>
+        <h3 class="card-title">Weekly Kamustahan Attendance Tracker — Feb 2026</h3>
+        <p class="card-desc">Manually recorded and encoded weekly Zoom kamustahan attendance for all agents — tracking presence across four weekly sessions in February 2026. Data distributed to co-secretaries as agent-specific updates and used as basis for Certificate of Participation issuance.</p>
+        <div class="outcome">
+          <div class="outcome-label">Outcome</div>
+          <div class="outcome-text">Accurate attendance records maintained for every Monday Zoom session. Certificates of Participation issued to qualifying agents based on verified records — zero discrepancies reported.</div>
+        </div>
+        <div class="card-tags">
+          <span class="ctag">Google Sheets</span><span class="ctag">Attendance Tracking</span><span class="ctag">Zoom Coordination</span><span class="ctag">Documentation</span><span class="ctag">Certificate Issuance</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 7. META BUSINESS SUITE INBOX -->
+    <div class="sample-card" data-cat="crm smm ai">
+      <div class="ss-wrap wm-img" onclick="openLightbox('img-inbox','Meta Business Suite — Recruitment Lead Inbox Management')">
+        <img src="/meta-inbox.png" alt="Meta Business Suite Inbox — Managing recruitment leads from Facebook ads" loading="lazy"/>
+        <div class="ss-overlay"><div class="ss-zoom">⊕ View Sample</div></div>
+        <div class="tool-badge">Meta Business Suite</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">Lead Management & Client Communication</div>
+        <h3 class="card-title">Recruitment Lead Inbox — Meta Business Suite</h3>
+        <p class="card-desc">Managed incoming recruitment leads from Facebook boosted hiring ads via Meta Business Suite — manually responding to 500+ prospect inquiries using structured screening scripts, collecting candidate details (name, age, contact number, current job), and routing qualified leads to the recruitment pipeline tracker.</p>
+        <div class="outcome">
+          <div class="outcome-label">Outcome</div>
+          <div class="outcome-text">Every lead received a prompt, professional response. Qualified candidates were immediately encoded into the recruitment tracker — zero leads lost or left unresponded in the inbox.</div>
+        </div>
+        <div class="card-tags">
+          <span class="ctag">Meta Business Suite</span><span class="ctag">Lead Management</span><span class="ctag">Client Communication</span><span class="ctag">Recruitment</span><span class="ctag">Facebook Ads</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 8. CONTENT CALENDAR / PLANNER -->
+    <div class="sample-card" data-cat="smm">
+      <div class="ss-wrap wm-img" onclick="openLightbox('img-planner','Social Media Content Calendar — Meta Business Suite Planner')">
+        <img src="/content-planner.png" alt="Meta Business Suite Content Planner — February 2026 weekly content calendar" loading="lazy"/>
+        <div class="ss-overlay"><div class="ss-zoom">⊕ View Sample</div></div>
+        <div class="tool-badge">Meta Business Suite</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">Social Media Management & Content Scheduling</div>
+        <h3 class="card-title">Weekly Content Calendar — February 2026</h3>
+        <p class="card-desc">Managed the full Facebook content calendar for two pages (GenSan City Properties + FH VIP Direct) via Meta Business Suite Planner — scheduling property listings, recruitment posts, developer promotions, event announcements, and motivational content. Multiple posts per day across both pages, planned and published consistently.</p>
+        <div class="outcome">
+          <div class="outcome-label">Outcome</div>
+          <div class="outcome-text">Both pages maintained consistent daily posting cadence throughout February 2026 — replacing reactive, ad hoc posting with a structured, planned content calendar managed entirely by one person.</div>
+        </div>
+        <div class="card-tags">
+          <span class="ctag">Meta Business Suite</span><span class="ctag">Content Scheduling</span><span class="ctag">Social Media Management</span><span class="ctag">Content Calendar</span><span class="ctag">Facebook Pages</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 9. FACEBOOK POST WITH AI CAPTION -->
+    <div class="sample-card" data-cat="smm ai">
+      <div class="ss-wrap wm-img" onclick="openLightbox('img-post-analytics','Facebook Post with AI-Assisted Caption — Futura Bay Listing')">
+        <img src="/fb-post-analytics.png" alt="Facebook real estate listing post — AI-assisted caption with hashtags published via Meta Business Suite" loading="lazy"/>
+        <div class="ss-overlay"><div class="ss-zoom">⊕ View Sample</div></div>
+        <div class="tool-badge">AI-Assisted Content</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">AI-Assisted Content Creation</div>
+        <h3 class="card-title">Real Estate Listing Post — AI-Assisted Caption & Hashtags</h3>
+        <p class="card-desc">Created and published a Facebook listing post for Futura Bay — General Santos using AI-assisted caption writing (Claude AI / ChatGPT) for urgency-driven real estate copy, strategic hashtag selection (#FilipinoHomes #FHVipdirect), and brand-aligned formatting. Published via Meta Business Suite under "Kath FH Vip-Staff" account.</p>
+        <div class="outcome">
+          <div class="outcome-label">Outcome</div>
+          <div class="outcome-text">Urgency-driven copy ("Lock in your unit NOW — save up to ₱300,000 before the price hike") produced following SOP and brand guidelines. AI-assisted workflow reduced caption writing time by ~60% while maintaining brand voice.</div>
+        </div>
+        <div class="card-tags">
+          <span class="ctag">Claude AI</span><span class="ctag">ChatGPT</span><span class="ctag">Meta Business Suite</span><span class="ctag">Copywriting</span><span class="ctag">Real Estate Content</span><span class="ctag">Hashtag Strategy</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 10. NOTION VA WORKSPACE -->
+    <div class="sample-card" data-cat="ai">
+      <div class="ss-wrap wm-img" onclick="openLightbox('img-notion','Notion VA Operations Hub — Personal Workspace Build')">
+        <img src="/notion-workspace.png" alt="Notion VA Workspace" loading="lazy"/>
+        <div class="ss-overlay"><div class="ss-zoom">⊕ View Sample</div></div>
+        <div class="tool-badge">Notion</div>
+      </div>
+      <div class="card-body">
+        <div class="card-category">AI &amp; Productivity Tools</div>
+        <h3 class="card-title">Notion VA Operations Hub — Personal Workspace Build</h3>
+        <p class="card-desc">Built personal VA workspace with Quick Access, Job Applications tracker, Daily Wins log, and CRM systems — tools I can replicate for client operations.</p>
+        <div class="outcome">
+          <div class="outcome-label">Outcome</div>
+          <div class="outcome-text">Built from scratch: Quick Access panel, Job Applications tracker, Daily Wins log, and CRM — fully replicable for any client.</div>
+        </div>
+        <div class="card-tags">
+          <span class="ctag">Notion</span><span class="ctag">Workspace Design</span><span class="ctag">Systems</span>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- end samples-grid -->
+</div><!-- end wrap -->
+
+<!-- BOTTOM CTA -->
+<div class="bottom-cta">
+  <div class="wrap-sm">
+    <h2>Seen enough to know I can help?</h2>
+    <p>These samples represent a fraction of what I managed daily. I'm available full-time, US time zone aligned, and ready to plug into your operations immediately.</p>
+    <a href="mailto:degalakatherinelean@gmail.com" class="btn btn-light">Email me directly →</a>
+    <a href="https://katherineneleandegala.netlify.app" class="btn btn-outline-light">View full portfolio</a>
+  </div>
+</div>
+
+<footer>
+  <span class="f-name">Katherine Lean Degala — Work Samples</span>
+  <span class="f-copy">© 2026 · All content protected · Unauthorized reproduction prohibited</span>
+</footer>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" onclick="closeLightbox()">
+  <button id="lightbox-close" onclick="closeLightbox()">✕ Close</button>
+  <img id="lightbox-img" src="" alt=""/>
+  <div id="lightbox-label"></div>
+</div>
+
+<script>
+// PROTECTION
+document.addEventListener('contextmenu',e=>e.preventDefault());
+document.addEventListener('selectstart',e=>e.preventDefault());
+document.addEventListener('dragstart',e=>e.preventDefault());
+document.addEventListener('keydown',e=>{
+  if((e.ctrlKey||e.metaKey)&&['p','s','u'].includes(e.key))e.preventDefault();
+});
+document.addEventListener('keyup',e=>{
+  if(e.key==='PrintScreen'){
+    const g=document.getElementById('ss-guard');
+    g.style.display='block';
+    navigator.clipboard.writeText('').catch(()=>{});
+    setTimeout(()=>g.style.display='none',1500);
+  }
+});
+
+// LIGHTBOX
+function openLightbox(id,label){
+  const card=event.currentTarget;
+  const img=card.querySelector('img');
+  if(!img||!img.src)return;
+  document.getElementById('lightbox-img').src=img.src;
+  document.getElementById('lightbox-label').textContent=label||'';
+  document.getElementById('lightbox').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closeLightbox(){
+  document.getElementById('lightbox').classList.remove('open');
+  document.body.style.overflow='';
+}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLightbox()});
+
+// FILTER
+function filterCards(cat,btn){
+  document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.sample-card').forEach(card=>{
+    const cats=card.dataset.cat||'';
+    if(cat==='all'||cats.includes(cat)){
+      card.style.display='';
+      setTimeout(()=>card.classList.add('visible'),50);
+    } else {
+      card.style.display='none';
+      card.classList.remove('visible');
+    }
+  });
+}
+
+// SCROLL REVEAL
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.classList.add('visible');
+      obs.unobserve(e.target);
+    }
+  });
+},{threshold:.08,rootMargin:'0px 0px -30px 0px'});
+
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+// Stagger cards on load
+const cards=document.querySelectorAll('.sample-card');
+cards.forEach((card,i)=>{
+  card.style.transitionDelay=`${i*0.08}s`;
+  obs.observe(card);
+});
+
+// SMOOTH LOAD
+document.body.style.opacity='0';
+document.body.style.transition='opacity .4s ease';
+window.addEventListener('load',()=>{document.body.style.opacity='1'});
+</script>
+</body>
+</html>
